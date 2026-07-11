@@ -6,9 +6,13 @@ theme:
     - navigation.tabs        # 这行是重点！启用顶部标签式导航
     - navigation.tabs.sticky # （可选）让顶部导航栏滚动时固定
 
+extra_css:
+  - stylesheets/extra.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
+  
 nav:
   - 首页: index.md
-  - 高中数学: 
+  - 高中数学:
     - 首页: 高数/index.md
     - 极限: 高数/极限.md
     - 导数: 高数/导数.md
@@ -17,7 +21,9 @@ nav:
   - 高中物理: 高物/index.md
   - 大学物理: 大物/index.md
   - 信息竞赛: 信竞/index.md
-  - 杂项: 杂项/index.md
+  - 杂项:
+    - 首页: 杂项/index.md
+    - 配置说明: 杂项/配置说明.md
   
 markdown_extensions:
   - pymdownx.arithmatex:
@@ -31,5 +37,3 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
 
-extra_css:
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
