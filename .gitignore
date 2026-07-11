@@ -1,0 +1,14 @@
+# 虚拟环境
+mkdocs-env/
+env/
+venv/
+# 构建输出
+site/
+.cache/
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+# 编辑器
+.vscode/
+.idea/
