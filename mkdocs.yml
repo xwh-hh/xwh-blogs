@@ -37,6 +37,7 @@ nav:
   - 杂项:
     - 首页: 杂项/index.md
     - 配置说明: 杂项/配置说明.md
+    - 6202 年语文卷: 杂项/6202年OIers统一考试语文.md
   
 markdown_extensions:
   - pymdownx.arithmatex:
