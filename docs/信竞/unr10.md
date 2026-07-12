@@ -23,7 +23,7 @@ UOJ 最终评测，没挂。
 ## Day 2+
 总分 $100+100+7+5+47+20+20=299$。  
 铜牌线 $259$。  
-？！jiazhichen844 298 分！？  
+？！jiazhichen844 $298$ 分！？  
 
 ![](https://cdn.luogu.com.cn/upload/image_hosting/mf1w90av.png)
 
