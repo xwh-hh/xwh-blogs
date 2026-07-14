@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../%E5%B8%B8%E7%94%A8%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%8F%8A%E8%AF%81%E6%98%8E/">
       
       
-        <link rel="next" href="../%E5%9D%87%E5%80%BC/">
+        <link rel="next" href="../%E5%87%A0%E4%BD%95/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>基本不等式 - xwh_hh's wiki</title>
+        <title>习题 - xwh_hh's wiki</title>
       
     
     
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              基本不等式
+              习题
             
           </span>
         </div>
@@ -1540,6 +1540,48 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BB%A3%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    首页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%B8%B8%E7%94%A8%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%8F%8A%E8%AF%81%E6%98%8E/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常用不等式及证明
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1549,82 +1591,54 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    习题
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    基本不等式
+    习题
   </span>
   
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E5%9D%87%E5%80%BC/" class="md-nav__link">
         
-  
-  <span class="md-ellipsis">
-    均值不等式
-  </span>
-  
 
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
+<nav class="md-nav md-nav--secondary" aria-label="目录">
   
   
   
   
-    <li class="md-nav__item">
-      <a href="../%E6%9F%AF%E8%A5%BF/" class="md-nav__link">
-        
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      三元不等式
+    </span>
+  </a>
   
-  <span class="md-ellipsis">
-    柯西不等式
-  </span>
+</li>
+      
+    </ul>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ex%E6%9F%AF%E8%A5%BF/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    柯西不等式衍生物
-  </span>
-  
-
-      </a>
+</nav>
+      
     </li>
   
 
@@ -2755,8 +2769,23 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      三元不等式
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2771,7 +2800,57 @@
                   
 
 
-<h1 id="_1">基本不等式</h1>
+  <h1>习题</h1>
+
+<h2 id="_1">三元不等式</h2>
+<p>例 1：给定整数 <span class="arithmatex">\(n\ge2\)</span>，设 <span class="arithmatex">\(a,b,c\)</span> 为三角形三边长，且 <span class="arithmatex">\(a+b+c=1\)</span>，求最小实数 <span class="arithmatex">\(\lambda\)</span>，使得 <span class="arithmatex">\(\sqrt[n]{a^n+b^n}+\sqrt[n]{b^n+c^n}+\sqrt[n]{c^n+a^n}&lt; \lambda\)</span>。</p>
+<details class="note">
+<summary>题解</summary>
+<p>题目问了小于号，说明上界取不到，大概率是“直角等腰三角形”。<br />
+设 <span class="arithmatex">\(\frac 12&gt;a\ge b\ge c&gt;0\)</span>，则有 <span class="arithmatex">\(\sqrt[n]{a^n+c^n}&lt; a+\frac c2,\sqrt[n]{b^n+c^n}&lt; b+\frac c2\)</span>（展开即证）。<br />
+那么 <span class="arithmatex">\(\sqrt[n]{a^n+c^n}+\sqrt[n]{b^n+c^n}\le a+b+c=1\)</span>。<br />
+然后考虑到 <span class="arithmatex">\(\sqrt[n]{a^n+b^n}&lt;\sqrt[n]{(\frac 12)^n\times2}=\frac{\sqrt[n]2}2\)</span>。<br />
+所以 <span class="arithmatex">\(\lambda=1+\frac{\sqrt[n]2}2\)</span>，当 <span class="arithmatex">\(a\rightarrow\frac12,\ b\rightarrow\frac12,\ c\rightarrow0\)</span> 时趋近 <span class="arithmatex">\(\lambda\)</span>。</p>
+</details>
+<p>例 2：<span class="arithmatex">\(a,b,c\ge 0,a^3+b^3+c^3=1\)</span>，求证：<span class="arithmatex">\(a^4b^4+b^4c^4+c^4a^4\le 3\)</span>。</p>
+<details class="note">
+<summary>题解</summary>
+<p>设 <span class="arithmatex">\(x=a^3,y=b^3,z=c^3\)</span>，则有 <span class="arithmatex">\(x+y+z=3\)</span>。<br />
+注意到 <span class="arithmatex">\((xy\cdot1)^{1/3}\le\frac{x+y+1}3\)</span>，有 <span class="arithmatex">\((xy)^{4/3}\le\frac{xy(x+y+1)}3\)</span>。<br />
+写出另外两式，求和得到 <span class="arithmatex">\((xy)^{4/3}+(yz)^{4/3}+(zx)^{4/3}\le\frac{(xy+yz+zx)+(x^2y+y^2z+z^2x+xy^2+yz^2+zx^2)}3\)</span>。<br />
+经典的，设 <span class="arithmatex">\(p=x+y+z,q=xy+yz+zx,r=xyz\)</span>，化简可得 <span class="arithmatex">\(q+pq-3r\ge3[(xy)^{4/3}+(yz)^{4/3}+(zx)^{4/3}]\)</span>。<br />
+根据 Schur 不等式，<span class="arithmatex">\(x(x-y)(x-z)+y(y-z)(y-x)+z(z-x)(z-y)\ge 0\)</span>。<br />
+化简可得 <span class="arithmatex">\(p^3-4pq+9r\ge0\)</span>，代入 <span class="arithmatex">\(p=3\)</span>，有 <span class="arithmatex">\(9-4q+3r\ge0\)</span>。  <br />
+代回去，<span class="arithmatex">\((xy)^{4/3}+(yz)^{4/3}+(zx)^{4/3}\le\frac{4q-3r}3=3-\frac{9-4q+3r}3\le3\)</span>。<br />
+证毕。</p>
+</details>
+<p>例 3：已知正实数 <span class="arithmatex">\(a,b,c\)</span> 满足 <span class="arithmatex">\(ab+bc+ca\le3abc\)</span>，求证：<br />
+$$ \sqrt{\frac{a^2+b^2}{a+b}}+\sqrt{\frac{a^2+b^2}{a+b}}+\sqrt{\frac{a^2+b^2}{a+b}}+3\le\sqrt2(\sqrt{a+b}+\sqrt{b+c}+\sqrt{c+a}) $$</p>
+<details class="note">
+<summary>题解</summary>
+<p>由 Cauchy 不等式，<span class="arithmatex">\(2(a+b)=[\frac{a^2+b^2}{(a+b)^2}+\frac{2ab}{(a+b)^2}][(a+b)+(a+b)]\ge(\sqrt\frac{a^2+b^2}{a+b}+\sqrt\frac{2ab}{a+b})^2\)</span>。
+两边开根号，写出对称式，发现只需证 <span class="arithmatex">\(\sqrt\frac{2ab}{a+b}+\sqrt\frac{2bc}{b+c}+\sqrt\frac{2ca}{c+a}\ge3\)</span>。<br />
+由 Hölder 不等式，<span class="arithmatex">\((\sqrt\frac{2ab}{a+b}+\sqrt\frac{2bc}{b+c}+\sqrt\frac{2ca}{c+a})^2[(\frac1a+\frac1b)+(\frac1b+\frac1c)+(\frac1c+\frac1a)\ge(\sqrt[3]2+\sqrt[3]2+\sqrt[3]2)^3=54\)</span>。<br />
+知 <span class="arithmatex">\(\frac1a+\frac1b+\frac1c\le3\)</span>，那么 <span class="arithmatex">\(\sqrt\frac{2ab}{a+b}+\sqrt\frac{2bc}{b+c}+\sqrt\frac{2ca}{c+a}\ge3\)</span> 成立。<br />
+证毕。</p>
+</details>
+<p>例 4：已知正实数 <span class="arithmatex">\(a,b,c\)</span> 满足 <span class="arithmatex">\(a^{2021}+b^{2021}+c^{2021}+abc=4\)</span>，求证：
+$$ \frac{a^{2020}+b^{2020}-c}{c^{2020}}+\frac{b^{2020}+c^{2020}-a}{a^{2020}}+\frac{c^{2020}+a^{2020}-b}{b^{2020}}\ge a^{2019}+b^{2019}+c^{2019} $$</p>
+<details class="note">
+<summary>题解</summary>
+<p>等价于：<br />
+$$ \frac{a^{2020}+b^{2020}}{c^{2020}}+\frac{b^{2020}+c^{2020}}{a^{2020}}+\frac{c^{2020}+a^{2020}}{b^{2020}}\ge a^{2019}+a^{-2019}+b^{2019}+b^{-2019}+c^{2019}+c^{-2019} $$<br />
+只需证：<br />
+$$ \frac{a^{2020}+b^{2020}}{c^{2020}}+\frac{b^{2020}+c^{2020}}{a^{2020}}+\frac{c^{2020}+a^{2020}}{b^{2020}}\ge a^{2020}+a^{-2020}+b^{2020}+b^{-2020}+c^{2020}+c^{-2020} $$<br />
+等价于：<br />
+$$ (a^{2020}+b^{2020}+c^{2020})(a^{-2020}+b^{-2020}+c^{-2020})-3\ge a^{2020}+a^{-2020}+b^{2020}+b^{-2020}+c^{2020}+c^{-2020} $$<br />
+等价于：<br />
+$$ (a^{2020}+b^{2020}+c^{2020}-1)(a^{-2020}+b^{-2020}+c^{-2020}-1)\ge4 $$<br />
+直接做不了，根据题目条件，不妨设 <span class="arithmatex">\(a\le b\le c\)</span>，则 <span class="arithmatex">\(a\le1\le c\)</span>。<br />
+注意到 <span class="arithmatex">\(a^{2020}+c^{2020}\ge 1+(ac)^{2020},\ a^{-2020}+c^{-2020}\ge 1+(ac)^{-2020}\)</span>，则：<br />
+$$ (a^{2020}+b^{2020}+c^{2020}-1)(a^{-2020}+b^{-2020}+c^{-2020}-1)\ge[b^{2020}+(ac)^{2020}][b^{-2020}+(ac)^{-2020}]\ge4 $$<br />
+证毕。</p>
+</details>
 
 
 
