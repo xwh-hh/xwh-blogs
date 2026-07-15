@@ -41,3 +41,13 @@ details.warning {
 details.fail {
     font-size: 14px;   
 }
+
+/* 让所有块级公式左对齐 */
+.katex-display > .katex {
+    text-align: left !important;
+}
+
+/* 可选：如果你希望公式像普通段落一样，没有额外缩进 */
+.katex-display {
+    margin: 1em 0 !important; /* 调整上下边距 */
+}
