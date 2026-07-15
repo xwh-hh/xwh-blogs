@@ -5,3 +5,12 @@
 body {
     font-family: "LXGW WenKai", sans-serif;
 }
+
+.md-grid {
+  max-width: 1280px; /* 你可以将 1440px 替换为任何你想要的值 */
+}
+
+
+details.note {
+    font-size: 14px;   /* 只把这个框里的基准字号设回 16px，其他页面不受影响 */
+}
