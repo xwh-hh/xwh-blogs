@@ -65,11 +65,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#x-0" class="md-skip">
-          跳转至
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -1831,17 +1826,6 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    常用等价小量
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1851,32 +1835,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#x-0" class="md-nav__link">
-    <span class="md-ellipsis">
-      \(x\) 趋于 \(0\) 时的三角函数
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -2770,23 +2728,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#x-0" class="md-nav__link">
-    <span class="md-ellipsis">
-      \(x\) 趋于 \(0\) 时的三角函数
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2802,17 +2743,34 @@
 
   <h1>常用等价小量</h1>
 
-<h2 id="x-0"><span class="arithmatex">\(x\)</span> 趋于 <span class="arithmatex">\(0\)</span> 时的三角函数</h2>
 <p>引理：<span class="arithmatex">\(0\lt x\lt \frac\pi 2\)</span> 时，<span class="arithmatex">\(\sin x\lt x\lt \tan x\)</span>。</p>
 <details class="success">
 <summary>证明</summary>
-<p><img alt="" src="../tmp1.png" />  </p>
+<p><img alt="" src="../tmp1.png" width="300" /><br />
+等价于 <span class="arithmatex">\(BC&gt;\stackrel\frown{AC}&gt;AB\)</span>，同时乘以 <span class="arithmatex">\(0.5\)</span>，等价于 <span class="arithmatex">\(S_{\bigtriangleup OAC}\lt S_{\text{扇形} OAC}\lt S_{\bigtriangleup OBC}\)</span>，显然。</p>
+</details>
+<div class="arithmatex">\[ \lim_{x\rightarrow0}\cos x=1 \]</div>
+<details class="success">
+<summary>证明</summary>
+<p>注意到 <span class="arithmatex">\(0\lt 1-\cos x=2\sin^2\fracx2\lt\frac{x^2}2\)</span>，根据极限定义即得。</p>
 </details>
 <div class="arithmatex">\[ \lim_{x\rightarrow 0}\frac {\sin x}x=1 \]</div>
 <details class="success">
 <summary>证明</summary>
-<p>注意到</p>
+<p>考虑 <span class="arithmatex">\(x&gt;0\)</span> 情形，由引理，<span class="arithmatex">\(\sin x\lt x\lt\tan x\)</span>，因此 <span class="arithmatex">\(1\lt \frac{\sin x}{x}\lt \frac1{\cos x}\)</span>，而 <span class="arithmatex">\(\lim_{x\rightarrow 0}\frac1{\cos x}=1\)</span>，故 <span class="arithmatex">\(\lim_{x\rightarrow 0}\frac {\sin x}x=1\)</span>。
+由于 <span class="arithmatex">\(x\)</span> 和 <span class="arithmatex">\(\sin x\)</span> 都是奇函数，<span class="arithmatex">\(x&lt;0\)</span> 情形同理。</p>
 </details>
+<div class="arithmatex">\[ \lim_{x\rightarrow 0}\frac {\tan x}x=1 \]</div>
+<details class="success">
+<summary>证明</summary>
+<p>把上一个式子乘一个 <span class="arithmatex">\(\frac1{\cos x}\)</span> 即可。</p>
+</details>
+<div class="arithmatex">\[ \lim_{x\rightarrow 0}\frac {\ln(x+1)}x=1 \]</div>
+<details class="success">
+<summary>证明</summary>
+<div class="arithmatex">\[ \lim_{x\rightarrow 0}\frac {\ln(x+1)}x=\lim_{x\rightarrow 0}\ln(x+1)^{\frac1x}=\lim_{x\rightarrow +\infty}\ln(1+\frac1x)^{x}=\ln e=1 \]</div>
+</details>
+<p>由上可得 <span class="arithmatex">\(x\rightarrow 0\)</span> 时 <span class="arithmatex">\(x,\sin x,\tan x,\ln(x+1)\)</span> 是等价小量。</p>
 
 
 
