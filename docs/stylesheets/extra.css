@@ -12,5 +12,32 @@ body {
 
 
 details.note {
-    font-size: 14px;   /* 只把这个框里的基准字号设回 16px，其他页面不受影响 */
+    font-size: 14px;   
+}
+details.bug {
+    font-size: 14px;   
+}
+details.success {
+    font-size: 14px;   
+}
+details.info {
+    font-size: 14px;   
+}
+details.tip {
+    font-size: 14px;   
+}
+details.help {
+    font-size: 14px;   
+}
+details.error {
+    font-size: 14px;   
+}
+details.example {
+    font-size: 14px;   
+}
+details.warning {
+    font-size: 14px;   
+}
+details.fail {
+    font-size: 14px;   
 }
