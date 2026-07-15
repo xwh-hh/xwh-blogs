@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1784,6 +1789,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    简介
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1793,6 +1809,56 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      写在前面的
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="写在前面的">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      符号约定
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      简单结论
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2728,6 +2794,47 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      写在前面的
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="写在前面的">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      符号约定
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      简单结论
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2743,7 +2850,17 @@
 
   <h1>简介</h1>
 
-
+<p>这里是数学分析 B1 部分学习笔记。<br />
+建议先阅读高中数学部分以及再来看。</p>
+<h2 id="_1">写在前面的</h2>
+<h3 id="_2">符号约定</h3>
+<p>约定 <span class="arithmatex">\(\lfloor x\rfloor\)</span> 和 <span class="arithmatex">\([x]\)</span> 为 <span class="arithmatex">\(x\)</span> 下取整。
+约定<strong>上确界</strong>是最小的上界，<strong>下确界</strong>是最大的下界。</p>
+<h3 id="_3">简单结论</h3>
+<p>实数域具有完备性（这是公理）：设 <span class="arithmatex">\(X\)</span> 和 <span class="arithmatex">\(Y\)</span> 是 <span class="arithmatex">\(\mathbb R\)</span> 的两个子集，满足对任何 <span class="arithmatex">\(x\in X,\,y\in Y\)</span> 都有 <span class="arithmatex">\(x\le y\)</span>，那么存在 <span class="arithmatex">\(c\in \mathbb R\)</span>，使得对任意 <span class="arithmatex">\(x\in X,\,y\in Y\)</span>，有 <span class="arithmatex">\(x\le c\le y\)</span>。<br />
+注：有理数域没有完备性。一个反例：取 <span class="arithmatex">\(X=\{u|u^2&lt;2,u&gt;0,u\in \mathbb Q\}\)</span>，<span class="arithmatex">\(Y=\{u|u^2&gt;2,u&gt;0,u\in \mathbb Q\}\)</span>。  </p>
+<p>实数域具有稠密性：任何两个数 <span class="arithmatex">\(x&lt;y\)</span> 之间一定有一个有理数。<br />
+证明不难，读者自证。</p>
 
 
 
