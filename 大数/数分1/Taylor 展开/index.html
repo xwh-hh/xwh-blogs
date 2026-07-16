@@ -744,7 +744,7 @@
         
   
   <span class="md-ellipsis">
-    切割线放缩
+    常用技巧
   </span>
   
 
@@ -761,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E9%AB%98%E6%95%B0/%E5%AF%BC%E6%95%B0/5/" class="md-nav__link">
+      <a href="../../../%E9%AB%98%E6%95%B0/%E5%AF%BC%E6%95%B0/6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -782,7 +782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E9%AB%98%E6%95%B0/%E5%AF%BC%E6%95%B0/6/" class="md-nav__link">
+      <a href="../../../高数/导数/7.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2745,7 +2745,29 @@
 
   <h1>Taylor 展开</h1>
 
-
+<p>我们试着用多项式逼近一个非常复杂的函数。<br />
+切线往往是一次多项式。<br />
+当 <span class="arithmatex">\(x\)</span> 趋近 <span class="arithmatex">\(x_0\)</span> 时，我们希望构造 <span class="arithmatex">\(n\)</span> 次多项式 <span class="arithmatex">\(T_n(x)\)</span>，使得 <span class="arithmatex">\(f(x)-T_n(x)\)</span> 在 <span class="arithmatex">\(x_0\)</span> 附近是比 <span class="arithmatex">\((x-x_0)^n\)</span> 更高阶的无穷小量。<br />
+我们多次利用洛必达法则，可以得到 <span class="arithmatex">\(n\)</span> 次 Taylor（泰勒）多项式：<br />
+$$ T_n(x)=\sum_{k=0}^n\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k $$
+特别地，取 <span class="arithmatex">\(x_0=0\)</span>，有：
+$$ T_n(x)=\sum_{k=0}^n\frac{f^{(k)}(0)}{k!}x^k $$
+这叫 Maclaurin（麦克劳林）多项式。</p>
+<details class="example" open="open">
+<summary>给出部分函数的 Maclaurin 展开</summary>
+<p>$ e^x=1+x+\frac12x^2+\frac16x^3+\frac1{24}x^4+\cdots $  </p>
+<p>$ \sin x=x-\frac16x^3+\frac1{120}x^5-\cdots $  </p>
+<p>$ \cos x=1-\frac12x^2+\frac1{24}x^4-\frac1{720}x^6+\cdots $   </p>
+<p>$ \frac1{1-x}=1+x+x^2+x^3+x^4+\cdots $，要求 $x\lt1 $  </p>
+<p>$ \ln(1+x)=x-\frac{x^2}2+\frac{x^3}3-\frac{x^4}4+\cdots $</p>
+</details>
+<hr />
+<p>带有 Peano 余项的 Taylor 展开：
+$$ f(x)=\sum_{k=0}^n\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^k) $$</p>
+<hr />
+<p>带有 Lagrange 余项的 Taylor 展开：
+$$ f(x)=\sum_{k=0}^n\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1} $$<br />
+其中 <span class="arithmatex">\(\xi\)</span> 介于 <span class="arithmatex">\(x\)</span> 和 <span class="arithmatex">\(x_0\)</span> 之间。存在性证明会用到 Lagrange 中值定理。</p>
 
 
 

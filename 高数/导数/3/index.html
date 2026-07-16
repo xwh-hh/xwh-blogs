@@ -844,6 +844,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      导数与单调性的关系
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -864,7 +873,7 @@
         
   
   <span class="md-ellipsis">
-    切割线放缩
+    常用技巧
   </span>
   
 
@@ -881,7 +890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../5/" class="md-nav__link">
+      <a href="../6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -902,7 +911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../6/" class="md-nav__link">
+      <a href="../../../高数/导数/7.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2917,6 +2926,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      导数与单调性的关系
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2991,6 +3009,47 @@ $$ f'(x)=\lim_{\Delta x\rightarrow0}\frac{2\cos(x+\frac12\Delta x)\sin\frac{\Del
 $$ f'(x)=\frac1x\cdot\lim_{\Delta x\rightarrow0}\frac{\ln(1+\frac{\Delta x}x)}{\frac{\Delta x}x}=\frac1x $$</p>
 </details>
 <p>例 6：<span class="arithmatex">\(f(x)=e^x\)</span>，求 <span class="arithmatex">\(f'(x)\)</span>。</p>
+<details class="success" open="open">
+<summary>解法</summary>
+<p>令 <span class="arithmatex">\(g(x)=\ln x\)</span> 是 <span class="arithmatex">\(f(x)\)</span> 的反函数，则：
+$$ f'(x)=\frac1{g'(f(x))}=\frac1{\frac1{f(x)}}=f(x)=e^x $$</p>
+</details>
+<p>例 7：<span class="arithmatex">\(f(x)=x^k\)</span>，<span class="arithmatex">\(k\in R\)</span>，<span class="arithmatex">\(k\ne0\)</span>，<span class="arithmatex">\(f(x)\)</span> 定义域为 <span class="arithmatex">\((0,+\infty)\)</span>，求 <span class="arithmatex">\(f'(x)\)</span>。</p>
+<details class="success" open="open">
+<summary>解法</summary>
+<p>先变形：<span class="arithmatex">\(f(x)=x^k=e^{k\ln x}\)</span>，这是复合函数，令 <span class="arithmatex">\(g(x)=k\ln x\)</span>，<span class="arithmatex">\(h(x)=e^x\)</span>，则 <span class="arithmatex">\(f(x)=h(g(x))\)</span>，故有：
+$$ f'(x)=g'(x)h'(g(x))=\frac kx\cdot e^{k\ln x}=\frac kx\cdot x^k=kx^{k-1} $$</p>
+</details>
+<p>例 8：<span class="arithmatex">\(f(x)=\tan x\)</span>，求 <span class="arithmatex">\(f'(x)\)</span>。</p>
+<details class="success" open="open">
+<summary>解法</summary>
+<div class="arithmatex">\[ f'(x)=(\frac{\sin x}{\cos x})'=\frac{\cos^2x-\sin x\cdot(-\sin x)}{\cos^2x}=\frac{\sin^2x+\cos^2x}{\cos^2x}=\frac1{\cos^2x} \]</div>
+</details>
+<h2 id="_8">导数与单调性的关系</h2>
+<p>如果函数 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上连续，在 <span class="arithmatex">\((a,b)\)</span> 上可导，那么 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上单调递<strong>增</strong>充要条件是以下 <span class="arithmatex">\(2\)</span> 条限制同时满足：</p>
+<ul>
+<li><span class="arithmatex">\(x\in(a,b)\)</span> 时 <span class="arithmatex">\(f'(x)\ge0\)</span> 恒成立。</li>
+<li>不存在区间 <span class="arithmatex">\((u,v)\subseteq(a,b)\)</span> 使得在 <span class="arithmatex">\((u,v)\)</span> 上恒有 <span class="arithmatex">\(f'(x)=0\)</span>。</li>
+</ul>
+<p>如果函数 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\((a,b)\)</span> 上连续，在 <span class="arithmatex">\((a,b)\)</span> 上可导，那么 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\((a,b)\)</span> 上单调递<strong>增</strong>充要条件是以下 <span class="arithmatex">\(2\)</span> 条限制同时满足：</p>
+<ul>
+<li><span class="arithmatex">\(x\in(a,b)\)</span> 时 <span class="arithmatex">\(f'(x)\ge0\)</span> 恒成立。</li>
+<li>不存在区间 <span class="arithmatex">\((u,v)\subseteq(a,b)\)</span> 使得在 <span class="arithmatex">\((u,v)\)</span> 上恒有 <span class="arithmatex">\(f'(x)=0\)</span>。</li>
+</ul>
+<hr />
+<p>如果函数 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上连续，在 <span class="arithmatex">\((a,b)\)</span> 上可导，那么 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上单调递<strong>减</strong>充要条件是以下 <span class="arithmatex">\(2\)</span> 条限制同时满足：</p>
+<ul>
+<li><span class="arithmatex">\(x\in(a,b)\)</span> 时 <span class="arithmatex">\(f'(x)\le0\)</span> 恒成立。</li>
+<li>不存在区间 <span class="arithmatex">\((u,v)\subseteq(a,b)\)</span> 使得在 <span class="arithmatex">\((u,v)\)</span> 上恒有 <span class="arithmatex">\(f'(x)=0\)</span>。</li>
+</ul>
+<p>如果函数 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\((a,b)\)</span> 上连续，在 <span class="arithmatex">\((a,b)\)</span> 上可导，那么 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\((a,b)\)</span> 上单调递<strong>减</strong>充要条件是以下 <span class="arithmatex">\(2\)</span> 条限制同时满足：</p>
+<ul>
+<li><span class="arithmatex">\(x\in(a,b)\)</span> 时 <span class="arithmatex">\(f'(x)\le0\)</span> 恒成立。</li>
+<li>不存在区间 <span class="arithmatex">\((u,v)\subseteq(a,b)\)</span> 使得在 <span class="arithmatex">\((u,v)\)</span> 上恒有 <span class="arithmatex">\(f'(x)=0\)</span>。</li>
+</ul>
+<hr />
+<p>如果 <span class="arithmatex">\(x_0\)</span> 是 <span class="arithmatex">\(f(x)\)</span> 的一个极值点，且 <span class="arithmatex">\(f'(x_0)\)</span> 存在，必有 <span class="arithmatex">\(f'(x_0)=0\)</span>（证明见大学数学 - 数学分析 B1 - 微分学 - 中值定理 的 Fermat 定理证明）。<br />
+但是，反过来是不成立的！比如说 <span class="arithmatex">\(f(x)=x^3\)</span>，在 <span class="arithmatex">\(x=0\)</span> 处导数为零，却不是极值点。  </p>
 
 
 

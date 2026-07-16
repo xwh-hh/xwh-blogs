@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -744,7 +749,7 @@
         
   
   <span class="md-ellipsis">
-    切割线放缩
+    常用技巧
   </span>
   
 
@@ -761,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E9%AB%98%E6%95%B0/%E5%AF%BC%E6%95%B0/5/" class="md-nav__link">
+      <a href="../../../%E9%AB%98%E6%95%B0/%E5%AF%BC%E6%95%B0/6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -782,7 +787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E9%AB%98%E6%95%B0/%E5%AF%BC%E6%95%B0/6/" class="md-nav__link">
+      <a href="../../../高数/导数/7.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1991,6 +1996,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    单调性、凸性与曲率
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -2000,6 +2016,50 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      单调性
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      凸性
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      曲率
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2730,6 +2790,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      单调性
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      凸性
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      曲率
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2745,7 +2840,17 @@
 
   <h1>单调性、凸性与曲率</h1>
 
-
+<h2 id="_1">单调性</h2>
+<p>如果可导函数 <span class="arithmatex">\(f(x)\)</span> 满足：对于任意 <span class="arithmatex">\(\varepsilon&gt;0\)</span>，存在 <span class="arithmatex">\(k&gt;0\)</span>，使得 <span class="arithmatex">\(x\in(x_0-k,x_0)\)</span> 时 <span class="arithmatex">\(f'(x)&gt;0\)</span>，<span class="arithmatex">\(x\in(x_0,x_0+k)\)</span> 时 <span class="arithmatex">\(f'(x)\lt0\)</span>，则 <span class="arithmatex">\(x_0\)</span> 为极大值点。极小值点也有类似性质。 <br />
+导数为 <span class="arithmatex">\(0\)</span> 的点是驻点，未必是极值点。一种判断方法是：连续求导直至导数不为 <span class="arithmatex">\(0\)</span>，这个过程中如果求了奇数次导则不为极值点，求了偶数次则为极值点。  </p>
+<h2 id="_2">凸性</h2>
+<p>定义就是 Jensen 不等式。<br />
+有如下定理成立：
+- 如果函数 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\(I\)</span> 上可微，则 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\(I\)</span> 上是凸函数，当且仅当其导数在 <span class="arithmatex">\(I\)</span> 上单调。
+- 如果函数 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\(I\)</span> 上有二阶导，则 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\(I\)</span> 上是凸函数，当且仅当二阶导在 <span class="arithmatex">\(I\)</span> 上不变号。</p>
+<h2 id="_3">曲率</h2>
+<p>计算公式：<span class="arithmatex">\(\kappa(x)=\Large\frac{f''(x)}{(1+f'^2(x))^{3/2}}\)</span>。<br />
+曲率半径是曲率的倒数。</p>
 
 
 
