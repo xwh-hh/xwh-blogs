@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC%E6%8A%80%E5%B7%A7/">
+        <link rel="prev" href="../%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/">
       
       
         <link rel="next" href="../%E5%8D%95%E8%B0%83%E6%80%A7%E3%80%81%E5%87%B8%E6%80%A7%E4%B8%8E%E6%9B%B2%E7%8E%87/">
@@ -64,6 +64,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#frac00" class="md-skip">
+          跳转至
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -702,7 +707,7 @@
         
   
   <span class="md-ellipsis">
-    基本初等函数
+    基础函数
   </span>
   
 
@@ -1942,11 +1947,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC%E6%8A%80%E5%B7%A7/" class="md-nav__link">
+      <a href="../%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    函数求导技巧
+    中值定理
   </span>
   
 
@@ -1970,6 +1975,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    未定式极限
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1979,6 +1995,41 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#frac00" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\frac{0}{0}\) 型未定式极限
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fracinftyinfty" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\frac{\infty}{\infty}\) 型未定式极限
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2730,6 +2781,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#frac00" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\frac{0}{0}\) 型未定式极限
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fracinftyinfty" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\frac{\infty}{\infty}\) 型未定式极限
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2745,7 +2822,38 @@
 
   <h1>未定式极限</h1>
 
-
+<p>这里主要讨论 <span class="arithmatex">\(\frac{\infty}{\infty}\)</span> 和 <span class="arithmatex">\(\frac{0}{0}\)</span> 型未定式的极限。 <br />
+这就是洛必达法则。</p>
+<h2 id="frac00"><span class="arithmatex">\(\frac{0}{0}\)</span> 型未定式极限</h2>
+<p>设 <span class="arithmatex">\(f(x),g(x)\)</span> 在 <span class="arithmatex">\(x_0\)</span> 处都趋于 <span class="arithmatex">\(0\)</span>，且在 <span class="arithmatex">\(x_0\)</span> 附近可导，<span class="arithmatex">\(g'(x)\ne0\)</span>，求证：如果 <span class="arithmatex">\(\lim_{x\rightarrow x_0}\frac{f'(x)}{g'(x)}=l\)</span>，则 <span class="arithmatex">\(\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=l\)</span> 可以是有限实数，也可以是 <span class="arithmatex">\(\infty\)</span>。</p>
+<details class="success" open="open">
+<summary>证明</summary>
+<p>考虑补充定义 <span class="arithmatex">\(f(x_0)=g(x_0)=0\)</span>，使得 <span class="arithmatex">\(f(x)\)</span> 和 <span class="arithmatex">\(g(x)\)</span> 在 <span class="arithmatex">\(x_0\)</span> 处连续。<br />
+不妨设 <span class="arithmatex">\(x&gt;x_0\)</span> 且趋近 <span class="arithmatex">\(x_0\)</span>。
+由 Cauchy 中值定理，存在 <span class="arithmatex">\(k\in(x_0,x)\)</span>，使得 <span class="arithmatex">\(\large\frac{f(x)-f(x_0)}{g(x)-g(x_0)}=\frac{f'(k)}{g'(k)}\)</span>，而 <span class="arithmatex">\(x\rightarrow x_0\)</span> 时 <span class="arithmatex">\(k\rightarrow x_0\)</span>，故：
+$$ \lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{g(x)-g(x_0)}=\lim_{k\rightarrow x_0}\frac{f'(k)}{g'(k)}=l $$</p>
+</details>
+<details class="note">
+<summary>如果 <span class="arithmatex">\(x_0\rightarrow\infty\)</span> 怎么办</summary>
+<p>令 <span class="arithmatex">\(y=\frac1{x_0}\)</span>，则 <span class="arithmatex">\(y\rightarrow0\)</span>，后根据上面结论不难得到。</p>
+</details>
+<h2 id="fracinftyinfty"><span class="arithmatex">\(\frac{\infty}{\infty}\)</span> 型未定式极限</h2>
+<p>设 <span class="arithmatex">\(f(x)\)</span> 和 <span class="arithmatex">\(g(x)\)</span> 在 <span class="arithmatex">\(x_0\)</span> 附近可导，且 <span class="arithmatex">\(\lim_{x\rightarrow x_0}g(x)=\infty\)</span>，如果 <span class="arithmatex">\(\lim_{x\rightarrow x_0}\frac{f'(x)}{g'(x)}=l\)</span> 那么 <span class="arithmatex">\(\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=l\)</span>。  </p>
+<details class="success" open="open">
+<summary>证明</summary>
+<p>只证明 <span class="arithmatex">\(l\in \mathbb R\)</span> 的情形，<span class="arithmatex">\(l=\infty\)</span> 的情形只需交换 <span class="arithmatex">\(f(x)\)</span> 和 <span class="arithmatex">\(g(x)\)</span>，再令 <span class="arithmatex">\(l=0\)</span> 即可。</p>
+<p>由极限定义可知，对任意的 <span class="arithmatex">\(\varepsilon&gt;0\)</span>，存在 <span class="arithmatex">\(k_1&gt;0\)</span>，使得 <span class="arithmatex">\(\forall\,x\in(x_0,x_0+k_1)\)</span>，<span class="arithmatex">\(l-\varepsilon\lt \frac{f'(x)}{g'(x)}\lt l+\varepsilon\)</span>。<br />
+由 Cauchy 中值定理，取 <span class="arithmatex">\([x,c]\subseteq (x_0,x_0+k_1)\)</span>，存在 <span class="arithmatex">\(\xi\in(x,c)\)</span>，满足 <span class="arithmatex">\(\large\frac{f(x)-f(c)}{g(x)-g(c)}=\frac{f'(\xi)}{g'(\xi)}\)</span>，故有 <span class="arithmatex">\(l-\varepsilon\lt\frac{f(x)-f(c)}{g(x)-g(c)}\lt l+\varepsilon\)</span>。<br />
+由于 <span class="arithmatex">\(\lim_{x\rightarrow x_0} g(x)=\infty\)</span>，固定 <span class="arithmatex">\(c\)</span>，存在 <span class="arithmatex">\(k_2&gt;0\)</span>，使得当 <span class="arithmatex">\(x\in(x_0,x_0+k_2)\)</span> 时，有 <span class="arithmatex">\(|\frac{g(c)}{g(x)}|\lt\varepsilon\)</span>，<span class="arithmatex">\(|\frac{f(c)}{g(x)}|\lt\varepsilon\)</span>，取 <span class="arithmatex">\(k=min\{k_1,k_2\}\)</span>，于是，当 <span class="arithmatex">\(x\in(x_0,x_0+k)\)</span> 时，有：<br />
+$$ \frac{f(x)}{g(x)}=\frac{f(x)-f(c)}{g(x)-g(c)}-\frac{g(c)}{g(x)}\cdot\frac{f(x)-f(c)}{g(x)-g(c)}+\frac{f(c)}{g(x)} $$ 
+因此，
+$$ l+\varepsilon+(|l|+\varepsilon)\varepsilon+\varepsilon&gt;\frac{f(x)}{g(x)}&gt;l-\varepsilon-(|l|+\varepsilon)\varepsilon-\varepsilon $$
+由极限定义即得。</p>
+</details>
+<details class="note">
+<summary>如果 <span class="arithmatex">\(x_0\rightarrow\infty\)</span> 怎么办</summary>
+<p>令 <span class="arithmatex">\(y=\frac1{x_0}\)</span>，则 <span class="arithmatex">\(y\rightarrow0\)</span>，后根据上面结论不难得到。</p>
+</details>
 
 
 

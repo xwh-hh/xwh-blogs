@@ -702,7 +702,7 @@
         
   
   <span class="md-ellipsis">
-    基本初等函数
+    基础函数
   </span>
   
 
@@ -1948,11 +1948,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC%E6%8A%80%E5%B7%A7/" class="md-nav__link">
+      <a href="../%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    函数求导技巧
+    中值定理
   </span>
   
 
@@ -2744,29 +2744,29 @@
   <h1>常用等价小量</h1>
 
 <p>引理：<span class="arithmatex">\(0\lt x\lt \frac\pi 2\)</span> 时，<span class="arithmatex">\(\sin x\lt x\lt \tan x\)</span>。</p>
-<details class="success">
+<details class="success" open="open">
 <summary>证明</summary>
 <p><img alt="" src="../tmp1.png" width="300" /><br />
 等价于 <span class="arithmatex">\(BC&gt;\stackrel\frown{AC}&gt;AB\)</span>，同时乘以 <span class="arithmatex">\(0.5\)</span>，等价于 <span class="arithmatex">\(S_{\bigtriangleup OAC}\lt S_{\text{扇形} OAC}\lt S_{\bigtriangleup OBC}\)</span>，显然。</p>
 </details>
 <div class="arithmatex">\[ \lim_{x\rightarrow0}\cos x=1 \]</div>
-<details class="success">
+<details class="success" open="open">
 <summary>证明</summary>
 <p>注意到 <span class="arithmatex">\(0\lt 1-\cos x=2\sin^2\frac x2\lt\frac{x^2}2\)</span>，根据极限定义即得。</p>
 </details>
 <div class="arithmatex">\[ \lim_{x\rightarrow 0}\frac {\sin x}x=1 \]</div>
-<details class="success">
+<details class="success" open="open">
 <summary>证明</summary>
 <p>考虑 <span class="arithmatex">\(x&gt;0\)</span> 情形，由引理，<span class="arithmatex">\(\sin x\lt x\lt\tan x\)</span>，因此 <span class="arithmatex">\(1\lt \frac{\sin x}{x}\lt \frac1{\cos x}\)</span>，而 <span class="arithmatex">\(\lim_{x\rightarrow 0}\frac1{\cos x}=1\)</span>，故 <span class="arithmatex">\(\lim_{x\rightarrow 0}\frac {\sin x}x=1\)</span>。
 由于 <span class="arithmatex">\(x\)</span> 和 <span class="arithmatex">\(\sin x\)</span> 都是奇函数，<span class="arithmatex">\(x&lt;0\)</span> 情形同理。</p>
 </details>
 <div class="arithmatex">\[ \lim_{x\rightarrow 0}\frac {\tan x}x=1 \]</div>
-<details class="success">
+<details class="success" open="open">
 <summary>证明</summary>
 <p>把上一个式子乘一个 <span class="arithmatex">\(\frac1{\cos x}\)</span> 即可。</p>
 </details>
 <div class="arithmatex">\[ \lim_{x\rightarrow 0}\frac {\ln(x+1)}x=1 \]</div>
-<details class="success">
+<details class="success" open="open">
 <summary>证明</summary>
 <div class="arithmatex">\[ \lim_{x\rightarrow 0}\frac {\ln(x+1)}x=\lim_{x\rightarrow 0}\ln(x+1)^{\frac1x}=\lim_{x\rightarrow +\infty}\ln(1+\frac1x)^{x}=\ln e=1 \]</div>
 </details>

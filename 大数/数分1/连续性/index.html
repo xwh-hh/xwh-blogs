@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -702,7 +707,7 @@
         
   
   <span class="md-ellipsis">
-    基本初等函数
+    基础函数
   </span>
   
 
@@ -1847,6 +1852,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    连续性
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1856,6 +1872,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1948,11 +1990,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC%E6%8A%80%E5%B7%A7/" class="md-nav__link">
+      <a href="../%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    函数求导技巧
+    中值定理
   </span>
   
 
@@ -2728,6 +2770,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2743,7 +2802,17 @@
 
   <h1>连续性</h1>
 
-
+<h2 id="_1">定义</h2>
+<p>称 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\(x_0\)</span> 处<strong>连续</strong>，当且仅当 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\(x_0\)</span> 的一个邻域内有定义且 <span class="arithmatex">\(f(x_0)=\lim_{d\rightarrow0}f(x_0+d)\)</span>。</p>
+<p>结论：初等函数在其定义区间上都是连续函数。</p>
+<p>间断点的分类：  </p>
+<ul>
+<li><strong>可去间断点</strong>：<span class="arithmatex">\(f(x_0+0)=f(x_0-0)\neq f(x_0)\)</span>。  </li>
+<li><strong>跳跃点</strong>：<span class="arithmatex">\(f(x_0+0)\neq f(x_0-0)\)</span>。  </li>
+<li><strong>第二类间断点</strong>：<span class="arithmatex">\(f(x_0+0)\)</span> 和 <span class="arithmatex">\(f(x_0-0)\)</span> 至少有一个不存在。  </li>
+</ul>
+<p>其中可去间断点和跳跃点统称为<strong>第一类间断点</strong>。</p>
+<p>零点定理：f(x) 在 <span class="arithmatex">\([u,v]\)</span> 上连续，且 <span class="arithmatex">\(f(u)f(v)\le0\)</span>，则 <span class="arithmatex">\(f(x)=0\)</span> 在 <span class="arithmatex">\([u,v]\)</span> 上有根。</p>
 
 
 

@@ -20,7 +20,7 @@
     
     
       
-        <title>函数求导技巧 - xwh_hh's wiki</title>
+        <title>中值定理 - xwh_hh's wiki</title>
       
     
     
@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#fermat" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -97,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              函数求导技巧
+              中值定理
             
           </span>
         </div>
@@ -702,7 +707,7 @@
         
   
   <span class="md-ellipsis">
-    基本初等函数
+    基础函数
   </span>
   
 
@@ -1949,15 +1954,79 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    中值定理
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    函数求导技巧
+    中值定理
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fermat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fermat 定理
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rolle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rolle 定理
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lagrange" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lagrange 中值定理
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cauchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cauchy 中值定理
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2730,6 +2799,50 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fermat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fermat 定理
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rolle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rolle 定理
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lagrange" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lagrange 中值定理
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cauchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cauchy 中值定理
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2743,9 +2856,38 @@
                   
 
 
-  <h1>函数求导技巧</h1>
+  <h1>中值定理</h1>
 
-
+<p>本文介绍中值定理。</p>
+<h2 id="fermat">Fermat 定理</h2>
+<p>设函数 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\(x_0\)</span> 处取到局部极值，且存在 <span class="arithmatex">\(\varepsilon &gt;0\)</span> 使得 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\((x_0-\varepsilon ,x_0+\varepsilon )\)</span> 处有定义，且 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\(x_0\)</span> 处可导，则 <span class="arithmatex">\(f'(x_0)=0\)</span>。  </p>
+<details class="success" open="open">
+<summary>证明</summary>
+<p>不妨设 <span class="arithmatex">\(x_0\)</span> 是局部极小值，取 <span class="arithmatex">\(h\rightarrow0^+\)</span> 根据导数定义，有 <span class="arithmatex">\(f_-'(x_0)=\frac{f(x_0)-f(x_0-h)}{h}\le0\)</span>，<span class="arithmatex">\(f_+'(x_0)=\frac{f(x_0+h)-f(x_0)}{h}\ge0\)</span>，由于 <span class="arithmatex">\(f'(x_0)\)</span> 存在，有 <span class="arithmatex">\(f_+'(x_0)=f_-'(x_0)\)</span>，只能是 <span class="arithmatex">\(0\)</span>，故 <span class="arithmatex">\(f'(x_0)=0\)</span>。  </p>
+<p>局部极大值同理，略。</p>
+</details>
+<h2 id="rolle">Rolle 定理</h2>
+<p>如果 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上连续，在 <span class="arithmatex">\((a,b)\)</span> 内可导，且 <span class="arithmatex">\(f(a)=f(b)\)</span>，求证：存在 <span class="arithmatex">\(s\in(a,b)\)</span> 使得 <span class="arithmatex">\(f'(s)=0\)</span>。</p>
+<details class="success" open="open">
+<summary>证明</summary>
+<p>如果存在 <span class="arithmatex">\(f(x)&gt;f(a)\)</span>，设函数最大值为 <span class="arithmatex">\(f(d)\)</span>，显然 <span class="arithmatex">\(d\)</span> 是极大值点，<span class="arithmatex">\(f'(d)=0\)</span>。<br />
+如果存在 <span class="arithmatex">\(f(x)\lt f(a)\)</span>，设函数最小值为 <span class="arithmatex">\(f(d)\)</span>，显然 <span class="arithmatex">\(d\)</span> 是极小值点，<span class="arithmatex">\(f'(d)=0\)</span>。<br />
+否则，<span class="arithmatex">\(f(x)=f(a)\)</span> 恒成立，在任意一点 <span class="arithmatex">\(f'(x)=0\)</span>。<br />
+故命题成立。</p>
+</details>
+<h2 id="lagrange">Lagrange 中值定理</h2>
+<p>如果 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上连续，在 <span class="arithmatex">\((a,b)\)</span> 内可导，求证：存在 <span class="arithmatex">\(s\in(a,b)\)</span> 使得 <span class="arithmatex">\(f'(s)=\frac{f(b)-f(a)}{b-a}\)</span>。</p>
+<details class="success" open="open">
+<summary>证明</summary>
+<p>令 <span class="arithmatex">\(g(x)=f(x)-\frac{f(b)-f(a)}{b-a}(x-a)\)</span>，则 <span class="arithmatex">\(g(a)=g(b)\)</span>，由 Rolle 定理知存在 <span class="arithmatex">\(g'(s)=0\)</span>，则 <span class="arithmatex">\(f'(s)=\frac{f(b)-f(a)}{b-a}\)</span>。</p>
+</details>
+<h2 id="cauchy">Cauchy 中值定理</h2>
+<p>若 <span class="arithmatex">\(f(x),g(x)\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上连续，在 <span class="arithmatex">\((a,b)\)</span> 上可导，且 <span class="arithmatex">\(g'(x)\ne0\)</span>，求证：存在 <span class="arithmatex">\(s\in(a,b)\)</span> 使得 <span class="arithmatex">\(\frac{f'(s)}{g'(s)}=\frac{f(b)-f(a)}{g(b)-g(a)}\)</span>。</p>
+<details class="success" open="open">
+<summary>证明</summary>
+<p>我们发现这就是 Lagrange 定理一般化的情形，可以仿照 Lagrange 定理的证明。<br />
+令 <span class="arithmatex">\(g(x)=f(x)-\frac{f(b)-f(a)}{g(b)-g(a)}[g(x)-g(a)]\)</span>，则 <span class="arithmatex">\(g(a)=g(b)\)</span>，由 Rolle 定理知存在 <span class="arithmatex">\(g'(s)=0\)</span>，则 <span class="arithmatex">\(\frac{f'(s)}{g'(s)}=\frac{f(b)-f(a)}{g(b)-g(a)}\)</span>。</p>
+</details>
 
 
 
