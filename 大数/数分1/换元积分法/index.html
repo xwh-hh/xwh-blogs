@@ -2745,7 +2745,28 @@
 
   <h1>换元积分法</h1>
 
-
+<p>所谓换元积分法，就是换元求解原函数再代回去的方法。<br />
+以下最终答案均省略 <span class="arithmatex">\(+C\)</span>。  </p>
+<p>例 1：求解 <span class="arithmatex">\(\int \tan x\mathrm dx\)</span>。</p>
+<details class="success" open="open">
+<summary>解</summary>
+<div class="arithmatex">\[ \int \tan x\mathrm dx=\int \frac{\sin x\mathrm dx}{\cos x}=\frac{\mathrm d(-\cos x)}{\cos x} \]</div>
+<p>令 <span class="arithmatex">\(t=-\cos x\)</span>，则： </p>
+<div class="arithmatex">\[ \int \tan x\mathrm dx=\int\frac{\mathrm d(-\cos x)}{\cos x}=-\int\frac1{t}\mathrm dt=-\ln|t|=-\ln|\cos x| \]</div>
+</details>
+<p>例 2：求解 <span class="arithmatex">\(\int \large\frac{\ln x}{x\sqrt{1+\ln x}}\normalsize\mathrm dx\)</span>。</p>
+<details class="success" open="open">
+<summary>解</summary>
+<p>令 <span class="arithmatex">\(t=\ln x\)</span>，<span class="arithmatex">\(h=\sqrt{1+t}\)</span>。</p>
+<div class="arithmatex">\[ \int \frac{\ln x}{x\sqrt{1+\ln x}}\mathrm dx=\int \frac{t}{e^t\sqrt{1+t}}\mathrm de^t=\int \frac{t}{e^t\sqrt{1+t}}e^t\mathrm dt=\int\frac{t}{\sqrt{1+t}}\mathrm dt=\int\frac{h^2-1}h\mathrm d(h^2-1) \]</div>
+<div class="arithmatex">\[ =\int(2h^2-2)\mathrm dh=\frac23h^3-2h=\frac23(1+\ln x)^{3/2}-2\sqrt{1+\ln x} \]</div>
+</details>
+<p>例 3：求解 <span class="arithmatex">\(\int \frac{1-\ln x}{(x-\ln x)^2}\mathrm dx\)</span>。</p>
+<details class="success" open="open">
+<summary>解</summary>
+<p>令 <span class="arithmatex">\(t=\large\frac{\ln x}{x}\)</span>，则 <span class="arithmatex">\(\large\frac{\mathrm dt}{\mathrm dx}=\frac{1-\ln x}{x^2}\)</span>，有：</p>
+<div class="arithmatex">\[ \int \frac{1-\ln x}{(x-\ln x)^2}\mathrm dx=\int\frac{1-\ln x}{x^2}\frac1{(1-\frac{\ln x}x)^2}\mathrm dx=\int\frac1{(1-t)^2}\mathrm dt=-\frac1{1-t}=\frac x{x-\ln x} \]</div>
+</details>
 
 
 

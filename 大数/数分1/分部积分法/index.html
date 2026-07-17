@@ -2745,7 +2745,24 @@
 
   <h1>分部积分法</h1>
 
-
+<p>所谓分部积分，就是根据微分公式 <span class="arithmatex">\([f(x)g(x)]'=f'(x)g(x)+f(x)g'(x)\)</span> 得出来的。 <br />
+核心公式是 <span class="arithmatex">\(\int u(x)\mathrm dv(x)=u(x)v(x)-\int v(x)\mathrm du(x)\)</span>。<br />
+以下最终答案均省略 <span class="arithmatex">\(+C\)</span>。<br />
+例 1：计算 $\int x\sin x \mathrm dx $。</p>
+<details class="success" open="open">
+<summary>解</summary>
+<div class="arithmatex">\[ \int x\sin x\mathrm dx=-\int x\mathrm d(\cos x)=-(x\cos x-\int \cos x\mathrm dx)=\sin x-x\cos x \]</div>
+</details>
+<p>例 2：计算 <span class="arithmatex">\(\int \cos(\ln x)\mathrm dx\)</span>。</p>
+<details class="success" open="open">
+<summary>解</summary>
+<p>先换元，令 <span class="arithmatex">\(t=\ln x\)</span>，原式为 <span class="arithmatex">\(\int e^t\cos t\mathrm dt\)</span>。<br />
+然后做 2 次分部积分。<br />
+<span class="arithmatex">\(\int e^t\cos t\mathrm dt+\int e^t\sin t\mathrm dt=e^t\sin t\)</span><br />
+<span class="arithmatex">\(\int e^t\cos t\mathrm dt-\int e^t\sin t\mathrm dt=e^t\cos t\)</span><br />
+因此 <span class="arithmatex">\(\int e^t\cos t\mathrm dt=\frac12e^t(\sin t+\cos t)\)</span>。<br />
+代回去，原式为 <span class="arithmatex">\(\frac12x[\cos(\ln x)+\sin(\ln x)]\)</span>。</p>
+</details>
 
 
 
