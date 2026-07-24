@@ -1,4 +1,5 @@
 ﻿site_name: xwh_hh's wiki
+site_url: https://xwh-hh.github.io/xwh-blogs/
 theme:
   name: material
   language: zh
@@ -98,6 +99,12 @@ nav:
     - 首页: 信竞/index.md
     - OI 回忆录: 信竞/OIrecall.md
     - UOJ NOI Round 10 游记: 信竞/unr10.md
+    - Rosaya bot:
+      - Medium:
+        - medium1: 信竞/Rosaya bot/medium1.md
+        - medium2: 信竞/Rosaya bot/medium2.md
+        - medium3*: 信竞/Rosaya bot/medium3.md
+        - medium4: 信竞/Rosaya bot/medium4.md
     - Ynoi 实战笔记:
       - 首页: 信竞/Ynoi.md
       - P5063 置身天上之森: 信竞/problem/P5063.md
@@ -107,6 +114,7 @@ nav:
       - P5071 此时此刻的光辉: 信竞/problem/P5071.md
       - P5072 盼君勿忘: 信竞/problem/P5072.md
       - P3934 炸脖龙 I: 信竞/problem/P3934.md
+      - P4688 掉进兔子洞: 信竞/problem/P4688.md 
       - P5309 初始化: 信竞/problem/P5309.md
       - P5312 竞赛实验班: 信竞/problem/P5312.md
       - P5355 由乃的玉米田: 信竞/problem/P5355.md
@@ -122,7 +130,6 @@ nav:
       - P5608 文化课: 信竞/problem/P5608.md
       - P5611 D2T2: 信竞/problem/P5611.md
       - P11369 弥留之国的爱丽丝: 信竞/problem/P11369.md
-      - P4688 掉进兔子洞: 信竞/problem/P4688.md 
   - 杂项:
     - 首页: 杂项/index.md
     - 配置说明: 杂项/配置说明.md
