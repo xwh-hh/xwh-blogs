@@ -163,9 +163,14 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
 
+# extra_javascript:
+#   - javascripts/katex.js
+#   - javascripts/external-links.js
+#   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
+#   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
+
 extra_javascript:
   - javascripts/katex.js
   - javascripts/external-links.js
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
-
+  - https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.js
+  - https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
