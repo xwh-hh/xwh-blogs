@@ -6,13 +6,106 @@ theme:
   features:
     - navigation.tabs        # 这行是重点！启用顶部标签式导航
     - navigation.tabs.sticky # （可选）让顶部导航栏滚动时固定
-    - navigation.expand   # 添加这一行即可
+    # - navigation.expand   # 添加这一行即可
+    - navigation.sections
 extra_css:
   - stylesheets/extra.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
   
 nav:
   - 首页: index.md
+  - 信息竞赛:
+    - 首页: 信竞/index.md
+    - OI 回忆录: 信竞/OIrecall.md
+    - UOJ NOI Round 10 游记: 信竞/unr10.md
+    - 部分科技学习笔记:
+      - 数据结构训练笔记:
+        - WBLT 平衡树: 信竞/wblt.md
+        - 莫队二次离线: 信竞/莫队二次离线.md
+        - 习题:
+          - 首页: 信竞/dsp.md
+          - P5063 置身天上之森: 信竞/problem/P5063.md
+          - P5068 我回来了: 信竞/problem/P5068.md
+          - P5069 纵使日薄西山: 信竞/problem/P5069.md
+          - P5070 即便看不到未来: 信竞/problem/P5070.md
+          - P5071 此时此刻的光辉: 信竞/problem/P5071.md
+          - P5072 盼君勿忘: 信竞/problem/P5072.md
+          - P3934 炸脖龙 I: 信竞/problem/P3934.md
+          - P4688 掉进兔子洞: 信竞/problem/P4688.md 
+          - P5309 初始化: 信竞/problem/P5309.md
+          - P5312 竞赛实验班: 信竞/problem/P5312.md
+          - P5355 由乃的玉米田: 信竞/problem/P5355.md
+          - P5356 由乃打扑克: 信竞/problem/P5356.md
+          - P6018 Fusion tree: 信竞/problem/P6018.md
+          - P6105 y-fast trie: 信竞/problem/P6105.md
+          - P4690 镜中的昆虫: 信竞/problem/P4690.md
+          - P8264 TEST_100: 信竞/problem/P8264.md
+          - P9989 TEST_69: 信竞/problem/P9989.md
+          - P4117 五彩斑斓的世界: 信竞/problem/P4117.md
+          - P5313 WBLT: 信竞/problem/P5313.md
+          - P5397 天降之物: 信竞/problem/P5397.md
+          - P5608 文化课: 信竞/problem/P5608.md
+          - P5611 D2T2: 信竞/problem/P5611.md
+          - P11369 弥留之国的爱丽丝: 信竞/problem/P11369.md
+      - 构造专项训练笔记:
+        - 构造常用技巧: 信竞/构造trick.md
+      - 计算几何专项训练笔记:
+        - 计算几何基础知识: 信竞/计算几何.md
+    - Rosaya bot:
+      - Medium:
+        - medium1: 信竞/Rosaya bot/medium1.md
+        - medium2: 信竞/Rosaya bot/medium2.md
+        - medium3*: 信竞/Rosaya bot/medium3.md
+        - medium4: 信竞/Rosaya bot/medium4.md
+        - medium5: 信竞/Rosaya bot/medium5.md
+        - medium6: 信竞/Rosaya bot/medium6.md
+        - medium7: 信竞/Rosaya bot/medium7.md
+        - medium8: 信竞/Rosaya bot/medium8.md
+        - medium9: 信竞/Rosaya bot/medium9.md
+        - medium10: 信竞/Rosaya bot/medium10.md
+        - medium11: 信竞/Rosaya bot/medium11.md
+        - medium12: 信竞/Rosaya bot/medium12.md
+      - Hard:
+        - hard1: 信竞/Rosaya bot/hard1.md
+        - hard2: 信竞/Rosaya bot/hard2.md
+        - hard3: 信竞/Rosaya bot/hard3.md
+        - hard4: 信竞/Rosaya bot/hard4.md
+        - hard5: 信竞/Rosaya bot/hard5.md
+        - hard6: 信竞/Rosaya bot/hard6.md
+        - hard7: 信竞/Rosaya bot/hard7.md
+        - hard8: 信竞/Rosaya bot/hard8.md
+        - hard9: 信竞/Rosaya bot/hard9.md
+        - hard10: 信竞/Rosaya bot/hard10.md
+        - hard11: 信竞/Rosaya bot/hard11.md
+        - hard12: 信竞/Rosaya bot/hard12.md
+
+  - 大学数学:
+    - 首页: 大数/index.md
+    - 数学分析 B1: 
+      - 简介: 大数/数分1.md
+      - 极限: 大数/数分1/极限.md
+      - 常用等价小量: 大数/数分1/常用等价小量.md
+      - 连续性: 大数/数分1/连续性.md
+      - 基本初等函数微积分: 大数/数分1/基本初等函数微积分.md
+      - 微分学:
+        - 首页: 大数/数分1/微分学.md
+        - 中值定理: 大数/数分1/中值定理.md
+        - 未定式极限: 大数/数分1/未定式极限.md
+        - 单调性、凸性与曲率: 大数/数分1/单调性、凸性与曲率.md
+        - Taylor 展开: 大数/数分1/Taylor 展开.md
+      - 不定积分:
+        - 首页: 大数/数分1/不定积分.md
+        - 换元积分法: 大数/数分1/换元积分法.md
+        - 分部积分法: 大数/数分1/分部积分法.md
+        - 有理函数积分: 大数/数分1/有理函数积分.md
+      - 积分学:
+        - 首页: 大数/数分1/积分学.md
+      - 常微分方程:
+        - 首页: 大数/数分1/常微分方程.md
+      - 无穷级数:
+        - 首页: 大数/数分1/无穷级数.md
+  - 大学物理:
+    - 首页: 大物/index.md
   - 高中数学:
     - 首页: 高数/index.md
     # - 基础符号语言: 高数/基础符号语言.md
@@ -66,91 +159,8 @@ nav:
     - 几何: 数竞/几何.md
     - 数论: 数竞/数论.md
     - 组合: 数竞/组合.md
-  - 大学数学:
-    - 首页: 大数/index.md
-    - 数学分析 B1: 
-      - 简介: 大数/数分1.md
-      - 极限: 大数/数分1/极限.md
-      - 常用等价小量: 大数/数分1/常用等价小量.md
-      - 连续性: 大数/数分1/连续性.md
-      - 基本初等函数微积分: 大数/数分1/基本初等函数微积分.md
-      - 微分学:
-        - 首页: 大数/数分1/微分学.md
-        - 中值定理: 大数/数分1/中值定理.md
-        - 未定式极限: 大数/数分1/未定式极限.md
-        - 单调性、凸性与曲率: 大数/数分1/单调性、凸性与曲率.md
-        - Taylor 展开: 大数/数分1/Taylor 展开.md
-      - 不定积分:
-        - 首页: 大数/数分1/不定积分.md
-        - 换元积分法: 大数/数分1/换元积分法.md
-        - 分部积分法: 大数/数分1/分部积分法.md
-        - 有理函数积分: 大数/数分1/有理函数积分.md
-      - 积分学:
-        - 首页: 大数/数分1/积分学.md
-      - 常微分方程:
-        - 首页: 大数/数分1/常微分方程.md
-      - 无穷级数:
-        - 首页: 大数/数分1/无穷级数.md
   - 高中物理:
     - 首页: 高物/index.md
-  - 大学物理:
-    - 首页: 大物/index.md
-  - 信息竞赛:
-    - 首页: 信竞/index.md
-    - OI 回忆录: 信竞/OIrecall.md
-    - UOJ NOI Round 10 游记: 信竞/unr10.md
-    - Rosaya bot:
-      - Medium:
-        - medium1: 信竞/Rosaya bot/medium1.md
-        - medium2: 信竞/Rosaya bot/medium2.md
-        - medium3*: 信竞/Rosaya bot/medium3.md
-        - medium4: 信竞/Rosaya bot/medium4.md
-        - medium5: 信竞/Rosaya bot/medium5.md
-        - medium6: 信竞/Rosaya bot/medium6.md
-        - medium7: 信竞/Rosaya bot/medium7.md
-        - medium8: 信竞/Rosaya bot/medium8.md
-        - medium9: 信竞/Rosaya bot/medium9.md
-        - medium10: 信竞/Rosaya bot/medium10.md
-        - medium11: 信竞/Rosaya bot/medium11.md
-        - medium12: 信竞/Rosaya bot/medium12.md
-      - Hard:
-        - hard1: 信竞/Rosaya bot/hard1.md
-        - hard2: 信竞/Rosaya bot/hard2.md
-        - hard3: 信竞/Rosaya bot/hard3.md
-        - hard4: 信竞/Rosaya bot/hard4.md
-        - hard5: 信竞/Rosaya bot/hard5.md
-        - hard6: 信竞/Rosaya bot/hard6.md
-        - hard7: 信竞/Rosaya bot/hard7.md
-        - hard8: 信竞/Rosaya bot/hard8.md
-        - hard9: 信竞/Rosaya bot/hard9.md
-        - hard10: 信竞/Rosaya bot/hard10.md
-        - hard11: 信竞/Rosaya bot/hard11.md
-        - hard12: 信竞/Rosaya bot/hard12.md
-    - Ynoi 实战笔记:
-      - 首页: 信竞/Ynoi.md
-      - P5063 置身天上之森: 信竞/problem/P5063.md
-      - P5068 我回来了: 信竞/problem/P5068.md
-      - P5069 纵使日薄西山: 信竞/problem/P5069.md
-      - P5070 即便看不到未来: 信竞/problem/P5070.md
-      - P5071 此时此刻的光辉: 信竞/problem/P5071.md
-      - P5072 盼君勿忘: 信竞/problem/P5072.md
-      - P3934 炸脖龙 I: 信竞/problem/P3934.md
-      - P4688 掉进兔子洞: 信竞/problem/P4688.md 
-      - P5309 初始化: 信竞/problem/P5309.md
-      - P5312 竞赛实验班: 信竞/problem/P5312.md
-      - P5355 由乃的玉米田: 信竞/problem/P5355.md
-      - P5356 由乃打扑克: 信竞/problem/P5356.md
-      - P6018 Fusion tree: 信竞/problem/P6018.md
-      - P6105 y-fast trie: 信竞/problem/P6105.md
-      - P4690 镜中的昆虫: 信竞/problem/P4690.md
-      - P8264 TEST_100: 信竞/problem/P8264.md
-      - P9989 TEST_69: 信竞/problem/P9989.md
-      - P4117 五彩斑斓的世界: 信竞/problem/P4117.md
-      - P5313 WBLT: 信竞/problem/P5313.md
-      - P5397 天降之物: 信竞/problem/P5397.md
-      - P5608 文化课: 信竞/problem/P5608.md
-      - P5611 D2T2: 信竞/problem/P5611.md
-      - P11369 弥留之国的爱丽丝: 信竞/problem/P11369.md
   - 杂项:
     - 首页: 杂项/index.md
     - 配置说明: 杂项/配置说明.md
