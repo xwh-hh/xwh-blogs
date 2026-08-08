@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@0x6b/ttf2woff2-wasm": "^0.13.2"
+  }
+}

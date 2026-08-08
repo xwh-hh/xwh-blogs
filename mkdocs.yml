@@ -2,6 +2,7 @@
 site_url: https://xwh-hh.github.io/xwh-blogs/
 theme:
   name: material
+  font: false
   language: zh
   features:
     - navigation.tabs        # 这行是重点！启用顶部标签式导航

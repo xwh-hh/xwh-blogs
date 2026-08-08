@@ -1,14 +1,15 @@
-# ÐéÄâ»·¾³
+# ï¿½ï¿½ï¿½â»·ï¿½ï¿½
 mkdocs-env/
 env/
 venv/
-# ¹¹½¨Êä³ö
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 site/
 .cache/
-# Python »º´æ
+# Python ï¿½ï¿½ï¿½ï¿½
 __pycache__/
 *.pyc
 *.pyo
-# ±à¼­Æ÷
+# ï¿½à¼­ï¿½ï¿½
 .vscode/
 .idea/
+docs/fonts/*.woff2
