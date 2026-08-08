@@ -1,9 +1,12 @@
-/* 引入霞鹜文楷字体 */
-/* @import url("https://cdn.jsdelivr.net/npm/@callmebill/lxgw-wenkai-web@latest/style.css"); */
-@import url("https://gcore.jsdelivr.net/npm/@callmebill/lxgw-wenkai-web@latest/style.css");
-/* 将字体应用到整个网站 */
+@font-face {
+  font-family: 'LXGW WenKai';
+  src: url('../fonts/LXGWWenKai-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
-    font-family: "LXGW WenKai", sans-serif;
+  font-family: 'LXGW WenKai', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif; !important
 }
 
 .md-grid {
