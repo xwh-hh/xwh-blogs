@@ -6,9 +6,8 @@
   font-display: swap;
 }
 body {
-  font-family: 'LXGW WenKai', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif; !important
+  font-family: 'LXGW WenKai', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
 }
-
 .md-grid {
   max-width: 1280px; /* 你可以将 1440px 替换为任何你想要的值 */
 }

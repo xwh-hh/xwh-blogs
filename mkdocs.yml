@@ -1,5 +1,4 @@
 ﻿site_name: xwh_hh's wiki
-site_url: https://xwh-hh.github.io/xwh-blogs/
 theme:
   name: material
   font: false
@@ -11,7 +10,8 @@ theme:
     # - navigation.sections
 extra_css:
   - stylesheets/extra.css
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
+  - stylesheets/katex.min.css   # 改为本地路径
+
   
 nav:
   - 首页: index.md
@@ -174,14 +174,17 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
 
+
 # extra_javascript:
 #   - javascripts/katex.js
 #   - javascripts/external-links.js
-#   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
-#   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
+#   - https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.js
+#   - https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
+
+
 
 extra_javascript:
-  - javascripts/katex.js
+  - javascripts/katex.min.js    # 改为本地路径
+  - javascripts/auto-render.min.js
+  - javascripts/katex.js        # 你的自定义渲染脚本
   - javascripts/external-links.js
-  - https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.js
-  - https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
