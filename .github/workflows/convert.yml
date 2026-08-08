@@ -1,0 +1,16 @@
+name: Convert TTF to WOFF2
+
+on:
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y woff2
+      - run: cd docs/fonts && woff2_compress LXGWWenKai-Regular.ttf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: my-font
+          path: docs/fonts/LXGWWenKai-Regular.woff2
