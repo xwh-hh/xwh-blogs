@@ -8,7 +8,7 @@ theme:
     - navigation.tabs        # 这行是重点！启用顶部标签式导航
     - navigation.tabs.sticky # （可选）让顶部导航栏滚动时固定
     # - navigation.expand   # 添加这一行即可
-    - navigation.sections
+    # - navigation.sections
 extra_css:
   - stylesheets/extra.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
