@@ -7,10 +7,29 @@ jobs:
   convert:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: sudo apt-get update && sudo apt-get install -y woff2
-      - run: cd docs/fonts && woff2_compress LXGWWenKai-Regular.ttf
-      - uses: actions/upload-artifact@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
-          name: my-font
+          fetch-depth: 1
+
+      - name: Install woff2 tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y woff2
+
+      - name: Verify TTF file exists
+        run: |
+          ls -la docs/fonts/LXGWWenKai-Regular.ttf
+          # 如果文件不存在，这里会报错，并停止执行
+
+      - name: Convert TTF to WOFF2
+        run: |
+          cd docs/fonts
+          woff2_compress LXGWWenKai-Regular.ttf
+          # 如果命令失败，这里会报错
+
+      - name: Upload WOFF2 artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LXGWWenKai-Regular.woff2
           path: docs/fonts/LXGWWenKai-Regular.woff2
